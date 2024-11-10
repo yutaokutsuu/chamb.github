@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Crying Face</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+
+    .face {
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .eye {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+    }
+
+    .left-eye {
+      left: 40px;
+    }
+
+    .right-eye {
+      right: 40px;
+    }
+
+    .pupil {
+      width: 25px;
+      height: 25px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 18px;
+      left: 18px;
+    }
+
+    .tear {
+      width: 12px;
+      height: 20px;
+      background-color: #00bfff; /* Light blue color for tears */
+      border-radius: 50%;
+      position: absolute;
+      animation: drip 1s infinite;
+    }
+
+    .left-tear {
+      left: 55px;
+      top: 90px;
+    }
+
+    .right-tear {
+      right: 55px;
+      top: 90px;
+    }
+
+    .mouth {
+      width: 150px;
+      height: 80px;
+      background-color: transparent;
+      border: 5px solid black;
+      border-radius: 0 0 50% 50%;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg);  /* Makes the sad mouth */
+    }
+
+    @keyframes drip {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Extra meme effect */
+    .crying-text {
+      font-size: 24px;
+      color: black;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="face">
+    <div class="eye left-eye">
+      <div class="pupil"></div>
+    </div>
+    <div class="eye right-eye">
+      <div class="pupil"></div>
+    </div>
+    <div class="tear left-tear"></div>
+    <div class="tear right-tear"></div>
+    <div class="mouth"></div><div>
+    <div class="crying-text">aray</div>
+  </div>
+
+</body>
+</html>
