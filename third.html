@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainy Day</title>
+  <!-- Link to Google Fonts for a cool font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set up the body */
+    body {
+      font-family: 'Poppins', sans-serif; /* Apply cool font */
+      height: 100vh;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Cool Rainy Background */
+    .rain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://cdn.pixabay.com/photo/2018/10/06/07/53/rain-3725149_960_720.jpg') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.7;
+    }
+
+    /* Styling the Text */
+    h1 {
+      font-size: 50px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    /* Text Animation (Fade In) */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Additional Cool Effect */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Rainy Background -->
+  <div class="rain"></div>
+
+  <!-- Dark overlay to make text stand out -->
+  <div class="overlay"></div>
+
+  <!-- Display the text -->
+  <h1>You don't love me na</h1>
+
+</body>
+</html>
